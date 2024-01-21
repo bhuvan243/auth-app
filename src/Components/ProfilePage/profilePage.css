@@ -1,0 +1,33 @@
+.page{
+    background-image: url('./background.svg');
+}
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 450px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px rgb(201, 201, 201);
+}
+.profile-container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info > div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.profile-info span{
+    display: block;
+}
+
+@media screen and (max-width: 450px) {
+    .profile-container{
+        width: 90vw;
+    }
+}
